@@ -1,3 +1,31 @@
+Applicant: Mohammad Uzair Rahil
+Dated: 07/09/2024
+
+Project Title: Evaluation of Regression Models Using Python
+Data Used: This project employs the well-known Advertising dataset, which tracks sales revenue in relation to advertisement spending across multiple channels—TV, radio, and newspapers. The dataset contains variables that represent ad spending in these media and the corresponding sales, providing a foundation for modeling relationships between marketing investments and sales performance.
+Methodology:
+1.	Data Exploration and Preprocessing:
+o	First, exploratory data analysis (EDA) was conducted using correlation matrices and heatmaps to understand the relationships among variables and detect multicollinearity.
+o	The dataset was then preprocessed, and missing values (if any) were handled to ensure data quality for modeling.
+2.	Regression Models:
+o	Several linear regression models were developed, labeled lm2 through lm6. These models vary in complexity and feature combinations to assess different predictor relationships with sales.
+o	Using the Scikit-learn library, the dataset was split into training and test sets to prevent overfitting and to assess the generalizability of the models.
+3.	Model Evaluation:
+o	The performance of each regression model was assessed using key statistical parameters:
+	Coefficient of Determination (R²): Measures the proportion of variance in sales explained by the model, indicating its goodness of fit.
+	Root Mean Squared Error (RMSE): Quantifies the model's prediction accuracy by calculating the square root of the average squared differences between observed and predicted values.
+o	Residuals were analyzed to check for any bias in predictions, and diagnostic plots were generated to evaluate the model's performance visually.
+4.	Additional Statistical Tests:
+o	To further evaluate the models, bias analysis was conducted, checking for systematic errors in predictions.
+o	Residual analysis, including the distribution of residuals and residual plots, was used to confirm the assumptions of linearity and homoscedasticity (constant variance of errors).
+Results:
+The lm6 model, which incorporated a specific combination of predictor variables and interactions, demonstrated superior performance compared to other models (lm2 through lm5). It achieved the highest R² value, indicating a stronger fit to the data, and the lowest RMSE, reflecting the most accurate predictions. Residual plots also indicated minimal bias, affirming the model's robustness in predicting sales based on advertisement spending.
+
+
+
+code begins here:
+
+
 #!/usr/bin/env python
 # coding: utf-8
 
